@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Twitter 2.0</title>
+</head>
+
+<body>
+    <div id="container">
+        <form id="tweetForm">
+            <div>
+                <img src="twitter.svg" id="twitterLogo" width="30" height="30">
+            </div>
+            <div>
+                <input type="text" id="name" class="className" placeholder="Name" required>
+                <input type="text" id="username" class="classUsername" placeholder="Username" required>
+            </div>
+            <div>
+                <input type="text" id="tweet" class="classTweet" placeholder="What's happening?" required minlength="1" maxlength="250"></input>
+            </div>
+            <div id="alert" class="alert">Your message has been sent</div>
+            <div>
+                <button type="submit" id="submitTweet">Send</button>
+            </div>
+            <div>
+                <a href="display.html" id="buttonTweets">My tweets</a>
+            </div>
+            <div>
+                <p id="credits">2020. Made by Edgar Franco</p>
+            </div>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

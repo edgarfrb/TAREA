@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #15202b;
+}
+
+#header {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#tweetDisplay ul {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    grid-area: tweetList;
+    list-style-type: none;
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+#tweetDisplay li {
+    color: white;
+    box-shadow: 2px 2px 8px #111922;
+    background-color: #15202b;
+    border-left: solid;
+    border-left-color: #253341;
+    border-radius: 0px;
+    border-width: 5px;
+    display: grid;
+    grid-template-areas: "className classUsername tweetOptions" "tweetBody tweetBody tweetBody";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.className {
+    color: white;
+    grid-area: className;
+    font-weight: 700;
+    width: 10%;
+}
+
+.classUsername {
+    color: #6f7f8b;
+    grid-area: classUsername;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: left;
+}
+
+.tweetBody {
+    color: white;
+    grid-area: tweetBody;
+}
+
+.tweetOptions {
+    grid-area: tweetOptions;
+    cursor: pointer;
+    color: #6f7f8b;
+    border: none;
+    background-color: #15202b;
+    transform: scale(.7);
+    align-items: right;
+}
+
+.writeNewTweet {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: #1da1f2;
+    color: white;
+    margin-top: 10px;
+    margin-left: 358px;
+}
+
+hr {
+    height: 2px;
+    background-color: #253341;
+    border: none;
+}
